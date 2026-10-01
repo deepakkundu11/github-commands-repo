@@ -1,0 +1,138 @@
+git branch                    # List branches
+git branch <name>             # Create branch
+git switch <name>             # Switch branch
+git switch -c <name>          # Create + switch
+git push -u origin <name>     # Push new branch
+git branch -d <name>          # Delete local branch
+git push origin --delete <name> # Delete remote branch
+                                                                                                                                                                                                                                                                                                                                                  git restore <file>            # Discard unstaged changes
+git restore --staged <file>   # Unstage file
+git reset --soft HEAD~1       # Undo commit, keep changes staged
+git reset HEAD~1              # Undo commit, keep changes
+git revert <commit>           # Safely undo a commit
+Repository basics
+                                                                                                                                                         Branches =git branch                    # List branches
+git branch <name>             # Create branch
+git switch <name>             # Switch branch
+git switch -c <name>          # Create + switch
+git push -u origin <name>     # Push new branch
+git branch -d <name>          # Delete local branch
+git push origin --delete <name> # Delete remote branch
+Undo changes
+
+git restore <file>            # Discard unstaged changes
+git restore --staged <file>   # Unstage file
+git reset --soft HEAD~1       # Undo commit, keep changes staged
+git reset HEAD~1              # Undo commit, keep changes
+git revert <commit>           # Safely undo a commit 
+                                                                                                                      Inspect history
+git log                       # Commit history
+git log --oneline             # Compact history
+git show <commit>             # Show commit details
+git diff                      # Unstaged changes
+git diff --staged             # Staged changes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Log in
+Sign up for free
+You said:
+
+/.cheatsheet github
+
+ChatGPT said:
+If you mean GitHub cheat sheets, these are useful:
+
+GitHub’s official Git Cheat Sheet — common Git commands and workflows.
+
+GitHub’s “Useful Cheatsheets” collection — curated cheatsheets for Git, Python, JavaScript, CLI, and more.
+
+GitHub `cheat` repository — a terminal tool for interactive command cheatsheets.
+
+GitHub cheatsheet topic — thousands of cheatsheet repositories.
+
+If by /.cheatsheet github you mean a specific / .cheatsheet command or GitHub shortcut, tell me what environment you're using (ChatGPT, terminal, VS Code, etc.).
+
+
+You said:
+
+/.cheatsheet github commands
+
+ChatGPT said:
+GitHub / Git Cheat Sheet
+Repository basics
+git clone <repo-url>          # Clone a repository
+git init                      # Create a new Git repo
+git remote -v                 # Show remote URLs
+git remote add origin <url>   # Add remote
+git remote set-url origin <url>
+
+Daily workflow
+git status                    # Check changes
+git add <file>                # Stage a file
+git add .                     # Stage all changes
+git commit -m "message"       # Commit
+git push                      # Push commits
+git pull                      # Fetch + merge remote changes
+
+Branches
+git branch                    # List branches
+git branch <name>             # Create branch
+git switch <name>             # Switch branch
+git switch -c <name>          # Create + switch
+git push -u origin <name>     # Push new branch
+git branch -d <name>          # Delete local branch
+git push origin --delete <name> # Delete remote branch
+
+Undo changes
+git restore <file>            # Discard unstaged changes
+git restore --staged <file>   # Unstage file
+git reset --soft HEAD~1       # Undo commit, keep changes staged
+git reset HEAD~1              # Undo commit, keep changes
+git revert <commit>           # Safely undo a commit
+
+Inspect history
+git log                       # Commit history
+git log --oneline             # Compact history
+git show <commit>             # Show commit details
+git diff                      # Unstaged changes
+git diff --staged             # Staged changes
+
+GitHub CLI (gh)
+gh auth login                # Log into GitHub
+gh repo create               # Create repository
+gh repo clone <owner/repo>   # Clone GitHub repo
+gh repo view                 # View repository
+gh repo fork <owner/repo>    # Fork repository
+
+gh pr create                 # Create pull request
+gh pr list                   # List PRs
+gh pr view <number>          # View PR
+gh pr checkout <number>      # Check out PR
+gh pr merge <number>         # Merge PR
+
+gh issue create              # Create issue
+gh issue list                # List issues
+gh issue view <number>       # View issuegit init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <YOUR_REPO_URL>
+git push -u origin main
